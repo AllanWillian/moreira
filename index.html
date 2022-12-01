@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css"/>
+    <title>Moreira'S</title>
+
+   <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    <script src="https://kit.fontawesome.com/c895234983.js" crossorigin="anonymous"></script>
+
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgb(0, 0,0,.1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logozada.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"  >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse" >
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link text-warning active" aria-current="page" href="#"><strong>Inicio</a></strong>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-warning" href="#"><strong>Cardapio</a></strong>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-warning disabled"><strong>Contato</a></strong>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" >
+          <button class="btn  btn-warning" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/burguer.jpg" width="100%">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <center><h1>Hambúrguers Artesanais</h1>
+            <p>Para cada tamanho de fome, existe um hambúrguer perfeito para acabar com ela.</p>
+            <p><a class="btn btn-lg btn-warning" href="#">Eu quero!!</a></p>
+          </center>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/burguer2.jpg" width="100%">
+        <div class="container">
+          <div class="carousel-caption">
+            <center><h1>Hambúrguers Clássicos</h1>
+            <p>O simples da melhor forma!</p>
+            <p><a class="btn btn-lg btn-warning" href="#">Eu quero!!</a></p>
+          </center>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/hot.jpg" width="100%">
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <center><h1>Hot-Dogs</h1>
+            <p></p>
+            <p><a class="btn btn-lg btn-warning" href="#">Eu quero!!</a></p>
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="img/burguer-c.png" class="img-circle" alt="Cinque Terre" width="400px" height="220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+        <h2 class="fw-normal text-white font-weight-bold"><strong>X - Marmitinha</h2></strong>
+        <p>X - Marmitinha contém muito sabor para o tamanho dele, mas não desmereça o tamanho dele eim. O famoso hambúrguer pra todo momento.</p>
+        <p><a class="btn btn-secondary btn-warning" href="#"><strong> Ver mais... &raquo;</a></p></strong>
+      </div>
+
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/hot-dog.png" class="img-circle" alt="Cinque Terre" width="400px" height="220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal text-white"><strong>Hot-Dogs</h2></strong>
+        <p>Não limitamos só no pão e na salsicha, o nosso Hot Dog é completo, conforme o seu pedido de complemento.</p>
+        <p><a class="btn btn-secondary btn-warning" href="#"><strong> Ver mais... &raquo;</a></p></strong>
+      </div>
+
+      <!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="img/burguer2-c.png" class="img-circle" alt="Cinque Terre" width="400px" height="220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2 class="fw-normal text-white"> <strong>X - Marmitão</h2></strong>
+        <p>O famoso da galera que adora explosões de sabores e não tem medo de comer muito. X - Marmitão é um dos top do nosso cardápio.</p>
+        <p><a class="btn btn-secondary btn-warning" href="#"> <strong> Ver mais... &raquo;</a></p></strong>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Keep Calm <span class="text-white">e peça um hambúrguer.</span></h2>
+        <p class="lead">Com as variedades no cardapio, Moreira'S adequa cada hambúrguer ao tamanho da sua fome. Conheça o nosso cardápio e fique por dentro das promoções do dia. </p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/hamb.jpg" width="400" height="500" style="border-radius: 25px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-white">1 é BOM </span> 2 é COMBO!!</h2>
+        <p class="lead">Está afim de trazer a familia? Você está no lugar certo. Temos combos casais e combos familiares. Venha conhecer o nosso ambiente.</p>
+        <p><a class="btn btn-lg btn-warning" href="https://www.google.com/maps/place/R.+Paineiras,+1300+-+Eldorado,+Contagem+-+MG,+32310-400/data=!4m2!3m1!1s0xa695ea675a3b57:0xd653a4f2c1dee26?sa=X&ved=2ahUKEwj_tJe4ldf7AhVVBrkGHd60BOIQ8gF6BAgQEAE">Localização</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/combos.jpg" width= "400" height="500" style="border-radius: 25px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1"><span class="text-white">Mais que batata frita,</span> uns minutinhos de felicidade!</h2>
+        <p class="lead">Não temos só Hambúrguers, temos porções e nossos Hot-Dogs, isso tudo para atender as suas vontades. </p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/variedades.jpg" width="400" height="500" style="border-radius: 25px;" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <!--REDES SOCIAIS ICONES-->
+  <i class="fa-brands fa-square-facebook fa-2x"></i> 
+  <i class="fa-brands fa-instagram fa-2x"></i>
+  <i class="fa-brands fa-linkedin fa-2x"></i>
+  <i class="fa-brands fa-youtube fa-2x"></i>
+  
+  
+
+  </footer>
+</main>
+<!--ICONES -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i></a>
+
+
+  </body>
+</html>
